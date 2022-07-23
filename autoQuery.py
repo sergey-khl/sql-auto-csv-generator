@@ -14,7 +14,7 @@ if __name__ == '__main__':
                              database='')
     cursor = conn.cursor()
 
-    query = ('enter your sql query here where parameter=%s')
+    query = ('select some, header, names from table where parameter=%s;')
     
     param = 5
     cursor.execute(query, (param))
